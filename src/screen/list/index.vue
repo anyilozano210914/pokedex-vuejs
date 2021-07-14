@@ -18,7 +18,7 @@
           <Pokemon :pokemon="item" @searchPokemon="pokemon" />
         </div>
       </b-col>
-      <b-modal id="detalle" centered title="BootstrapVue">
+      <b-modal id="detalle" centered title="BootstrapVue" v-if="pokemonModal != null">
         <template #modal-header>
           <b-col md="12" class="d-flex justify-content-center">
             <img :src="pokemonModal.sprites.front_default" alt="" />

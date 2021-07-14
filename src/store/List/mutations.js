@@ -1,3 +1,5 @@
+import store from '@/store';
+
 export default {
     setSearch(state, value){
         state.search = value;
@@ -14,4 +16,11 @@ export default {
     setPokemonsList(state, value){
         state.searchPokemons = value;
     },
+
+    showLoading(){
+        store.state.Home.loading = true
+    },
+    hideLoading(){
+        store.state.Home.loading = false    
+    }
 }
