@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import './components/home';
+@import './components/list';
+@import './components/menu';
+* {
+    font-family: 'Lato', sans-serif; 
+}
+
+.body {
+    background-color: #E5E5E5;
+}
+
+.pokeboll {
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+    img {
+            animation: lds-hourglass 1.2s infinite;
+    }
+}
+
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.09) !important;
+  border-radius: 0.3rem;
+  outline: 0;
+}
+
+.close {
+  background: transparent;
+  border: none;
+  font-size: 28px;
+}
+
+.modal-header {
+  background-image: url('/images/paisaje.png');
+  background-size: 100% 100%;
+  height: 150px;
+
+  img {
+    width: 40%;
+  }
+}

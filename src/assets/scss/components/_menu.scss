@@ -1,0 +1,39 @@
+.menu {
+    background-color: #fff;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    padding: 25px 0;
+    box-shadow: 0px -5px 4px rgba(0, 0, 0, 0.05);
+
+    .all {
+        background-color: #BFBFBF;
+        border-radius: 20px;
+        width: 100%;
+        box-shadow: none !important;
+        border: none !important;
+        padding: 10px 0 !important;
+        font-size: 18px;
+    }
+    .favortite {
+        background-color: #BFBFBF;
+        border-radius: 20px;
+        width: 100%;
+        box-shadow: none !important;
+        border: none !important;
+        padding: 10px 0 !important;
+        font-size: 18px;
+    }
+
+    .active {
+        background-color: #F22539;
+    }
+
+    .hambur {
+        margin-right: 11px;
+    }
+
+    .estre {
+        margin-right: 12px;
+    }
+}

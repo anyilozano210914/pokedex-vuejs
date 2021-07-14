@@ -1,0 +1,19 @@
+.pikachu {
+    width: 40%;
+}
+
+.button-start {
+    background-color: #F22539 !important;
+    border-radius: 20px;
+    width: 150px;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 10px 0 !important;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1024px) {
+    .pikachu {
+        width: 90%;
+    }
+}
