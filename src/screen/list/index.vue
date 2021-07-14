@@ -13,10 +13,20 @@
           ></b-form-input>
         </b-input-group>
       </b-col>
-      <b-col md="12" class="mt-5">
+      <b-col md="12" class="mt-5" v-if="pokemons.length > 0">
         <div v-for="(item, index) in pokemons" :key="index">
           <Pokemon :pokemon="item" @searchPokemon="pokemon" />
         </div>
+      </b-col>
+      <b-col md="12" class="mt-5" v-else>
+        <b-col></b-col>
+        <h1 class="text-center">Uh - Oh!</h1>
+        <p class="text-center">You look lost on your journey!</p>
+        <b-col class="d-flex justify-content-center" md="12">
+          <router-link to="/pokemons">
+            <b-btn class="button-start">Go back home</b-btn>
+          </router-link>
+        </b-col>
       </b-col>
       <b-modal id="detalle" centered title="BootstrapVue" v-if="pokemonModal != null">
         <template #modal-header>
